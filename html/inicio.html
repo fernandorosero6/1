@@ -1,0 +1,145 @@
+<!DOCTYPE html:5>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahorra más</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <video autoplay muted loop>
+      <source src="/Video/ocean_-_69949 (1440p).mp4" type="video/mp4" />
+    </video>
+
+    <header class="header">
+      <a href="/html/inicio.html" class="logo"
+        ><img src="/img/logo.png" alt="Logo"
+      /></a>
+      <nav class="navegacion">
+        <ul>
+          
+          <!-- <li class="submenu">
+                    <a href="contador.html" target="blank">CONTADORES</a>
+                    <ul class="hijos">
+                        <li><a href="agregar.html">AGREGAR CONTADOR</a></li>
+                        <li><a href="activos.html">CONTADORES ACTIVOS</a></li>
+                        <li><a href="inactivos.html">CONTADORES INACTIVOS</a></li>
+                    </ul>
+                </li> -->
+          <li>
+            <a href="/html/simulador.html" target="blank">SIMULADOR DE TARIFA</a>
+          </li>
+          
+          <li><a href="/html/registro.html" target="blank">CREAR CUENTA</a></li>
+          <li><a href="/html/login.html" target="blank">INICIAR SESIÓN</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contenido">
+      <section class="tarjetas">
+        <div class="Grifo-container">
+          <div class="text-tarjetas">
+            <h2>¿Por qué pagamos por el agua potable y alcantarillado?</h2>
+            <p>
+              El agua potable que llega a nuestras casas pasa por un largo y
+              complejo proceso de captación, tratamiento y distribución.
+              Asimismo, el agua de los desagües debe ser tratada para que no
+              contamine el ambiente. Todo ello es solventado con tu pago
+              mensual. Conoce aquí en qué consiste cada uno de esos procesos:
+            </p>
+          </div>
+
+
+          
+
+          <!-- <div class="foto-copia">
+            <img class="Grifo-img" src="/img/copia2.png" />
+          </div> -->
+          <div class="Grifo-group">
+            <div class="Grifo-1"></div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- contactanos -->
+      <div class="form-contactar">
+        <form action="enviar.php" method="post">
+          <h2>Formulario de Contacto</h2>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre"
+            required
+          />
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="Correo Electrónico"
+            required
+          />
+          <input
+            type="text"
+            id="telefono"
+            name="telefono"
+            placeholder="Teléfono"
+            required
+          />
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escriba aquí su mensaje"
+            required
+          ></textarea>
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            ENVIAR
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario</h1>
+                  <button  type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Su mensaje fue enviado con éxito</p>
+                </div>
+                <div class="modal-footer">
+                  <button   type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="Footer-container">
+        <p>&copy; 2024 Ahorra+ Todos los derechos reservados.</p>
+        <ul>
+          <li><a href="/html/inicio.html">INICIO</a></li>
+          <li><a href="/html/inicio.html">NOSOTROS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" alt=""><img src="/img/facebook.png" /></a>
+          <a href="#" alt=""><img src="/img/instagram.png" /></a>
+          <a href="#" alt=""><img src="/img/youtube.png" /></a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

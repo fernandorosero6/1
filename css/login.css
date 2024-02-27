@@ -1,4 +1,130 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", sans-serif ;
+
+}
+
+header{
+  position: absolute;
+  width: 100%;
+  top:0 ;
+  left: 0;
+  z-index: 4;
+}
+
+header .container{
+  max-width: 82rem;
+  /* background-color: red; */
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 65px;
+  display: flex;
+  align-items: flex-end;
+}
+
+header ul{
+  display: flex;
+  list-style: none;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.logo .img-dark-white{
+  height: 35px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+}
+
+.logo img{
+  height: 35px;
+}
+
+
+/*despues de nav*/
+
+.login{
+  width: 100%;
+  overflow: hidden;
+  background-color: ffff;
+}
+
+.login .container{
+    height: 100vh;
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr ;
+} 
+.login .container >div{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.left{
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  background-color:white;
+  padding: 65px 1.5rem 0;
+  display: grid;
+  grid-template-columns:repeat(2, 1fr) ;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.login-heading h1{
+  font: 600 ;
+  color: black;
+  font-size:3.5rem ;
+  line-height: 0.9;
+  white-space: nowrap;
+  margin-bottom: 1.2rem;
+}
+
+.login-heading h1 span{
+  color: aqua;
+}
+
+.text{
+  color: gray;
+  line-height: 1.1;
+  font-size: 1rem;
+}
+
+.text a{
+  color: aqua;
+  transition: 0.3s;
+
+}
+
+.text a:hover{
+  color: rgba(6, 216, 216, 0.897);
+}
+
+/* ESTILOS FORMULARIO */
+
+.login-form{
+  display: grid;
+  margin-top: 2.55rem;
+  grid-template-columns: repeat(2, 1fr);
+} 
+
+
+/* *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -68,7 +194,7 @@
 }
 .navegacion .submenu .hijos li{
 	display: block;
-	/* overflow: hidden; */
+	/* overflow: hidden; 
 	border-bottom: none;
 }
 .navegacion .submenu .hijos li a{
@@ -155,7 +281,7 @@ video{
   }
 
 
-  /* footer */
+  /* footer 
   footer {
     background-image: linear-gradient(to top, #53ece744 0%, #22649e42 100%);
     padding: 20px;
@@ -202,4 +328,4 @@ video{
     width: 20px;
     height: 20px;
     
-  }
+  } 
