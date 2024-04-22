@@ -14,98 +14,105 @@
       <ul>
         <li>
           <a href="#" class="logo">
-            <div class="img-dark-white">
-              <img src="/img/logo.png"  title="Ahorramas">
-              <img src="/img/logo.png"  title="Ahorramas">
+            <div class="images">
+              <img src="/img/logo.png"  class="logo-forDark" title="Ahorramas">
+              <img src="/img/logo.png"  class="logo-forLight" title="Ahorramas">
             </div>
-            <h2>Ahorra +<spam>.</spam></h2>
+            <h2>Ahorra +<span>.</span></h2>
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link theme-toggle">Inicio Secion</a>
         </li>
+ 
         <li>
-          <a href="#" class="nav-link">Contadores</a>
-        </li>
-        <li>
-          <a href="#" class="nav-link">Historial</a>
-        </li>
-        <li>
-          <a href="#" class="nav-link">Presupuesto</a>
-        </li>
-        <li>
-          <i class="fa-solid fa-sun" style="color: yellow"></i>
-          <i class="fa-solid fa-moon"></i>
+          <a class="nav-link theme-toggle">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+          </a>
         </li>
       </ul>
      </div>
   </header>
 
   <main>
-    <section class="login">
+    <section class="contact">
       <div class="container">
         <div class="left">
           <div class="form-wrapper">
-            <div class="login-heading">
+            <div class="contact-heading">
               <h1>Vamos avanzando<span>.</spam></h1>
               <p class="text">Hola: <a href="#">Ahrora mas</a></p>
             </div>
 
 
-            <form action="index.html" method="post " class="login-form">
+            <form action="index.html" method="post " class="contact-form">
               <div class="input-wrap">
-                <input class="login-form" name="First name" type="text" required placeholder="Fernando">
-                <label>Nombre completo</label>
-                <i class="fa-solid fa-user"></i>
+                <input class="contact-input" autocomplete="off" name="First name" type="text" required placeholder="">
+                <label>Nombres</label>
+                <i class="icon fa-solid fa-user"></i>
               </div>
 
 
               <div class="input-wrap">
-                <input class="login-form" name="First name" type="text" required placeholder="Fernando">
+                <input class="contact-input" name="First name" type="text" required placeholder="">
+                <label>Apellidos</label>
+                <i class="icon fa-solid fa-id-card"></i>
+              </div>
+
+
+              <div class="input-wrap w-100">
+                <input class="contact-input" name="ID" type="number" required placeholder="">
                 <label>Documento de identidad</label>
-                <i class="fa-solid fa-id-card"></i>
+                <i class="icon fa-solid fa-envelope"></i>
+              </div>
+
+
+              <div class="input-wrap w-100">
+                <input class="contact-input" name="First-name" type="text" required placeholder="">
+                <label>Email</label>
+                <i class="icon fa-solid fa-envelope"></i>
               </div>
 
 
               <div class="input-wrap">
-                <input class="login-form" name="Email" type="email" required placeholder="@gmail.com">
-                <label>Correo Electrónico</label>
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-
-
-              <div class="input-wrap">
-                <input class="login-form" name="First name" type="text" required placeholder="Fernando">
-                <label>Confirmacion de correo</label>
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-
-
-              <div class="input-wrap">
-                <input class="login-form" name="Second name" type="text" required placeholder="Esteban">
+                <input class="contact-input" name="First-password" type="password" required placeholder="">
                 <label>Contraseña</label>
-                <i class="fa-solid fa-lock"></i>
+                <i class="icon fa-solid fa-lock"></i>
               </div>
 
 
               <div class="input-wrap">
-                <input class="login-form" name="Email" type="email" required placeholder="@gmail.com">
+                <input class="contact-input" name="Second-password" type="password" required placeholder="">
                 <label>Confirmacion de contraseña</label>
-                <i class="fa-solid fa-lock"></i>
+                <i class="icon fa-solid fa-lock"></i>
               </div>
-            </form>
 
+              <div class="contact-buttons">
+              <button class="btn upload">
+                <span>
+                  <i class="fa-solid fa-paperclip"></i> agregar archivo 
+                </span>
+                <input type="file" name="attachement">
+              </button>
+              <input type="submit" value="enviar" class="btn">
+            </div>
+            </form>
           </div>
         </div>
-        <div class="right"></div>
+        <div class="right">
+          <div class="image-wrapper">
+            <img src="/img/agua2.jpg" class="img">
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
 
-      <footer>
+      <!-- <footer>
         <div class="Footer-container">
-            <!-- <img class="logo-footer" src="img/logo.png"> -->
+            <img class="logo-footer" src="img/logo.png">
           <p>&copy; 2024 Ahorra + 
             Todos los derechos reservados.</p>
           <ul>
@@ -120,7 +127,9 @@
             <a href="#" alt=""><img src="img/youtube.png"></a>
           </div>
         </div>
-      </footer>
+      </footer> -->
+
+      <script src="app.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/v4-shims.min.js" integrity="sha512-lcumC2XgVQA+cNJaYBRtZcTJ88EZ/Na2rG2yKtasO44flXlQWjvaqBqJch22AG9t/4pfD1EVD49oW8PBxtWBWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
